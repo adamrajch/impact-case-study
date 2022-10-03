@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/quotes */
 import { Global } from '@mantine/core';
 
 export default function GlobalStyles() {

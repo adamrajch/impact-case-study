@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import { Card, createStyles, Stack, Text, Title } from '@mantine/core';
 import axios from 'axios';
 import { GetServerSideProps } from 'next';
