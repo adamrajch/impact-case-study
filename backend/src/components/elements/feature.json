@@ -3,12 +3,13 @@
   "info": {
     "name": "feature",
     "displayName": "Feature",
-    "icon": "traffic-light"
+    "icon": "traffic-light",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "text": {
+      "type": "richtext"
     }
   }
 }

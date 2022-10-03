@@ -5,7 +5,8 @@
     "singularName": "page",
     "pluralName": "pages",
     "displayName": "Page",
-    "name": "page"
+    "name": "page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -40,15 +41,7 @@
     "contentSections": {
       "type": "dynamiczone",
       "components": [
-        "sections.hero",
-        "sections.bottom-actions",
-        "sections.feature-columns-group",
-        "sections.feature-rows-group",
-        "sections.testimonials-group",
-        "sections.large-video",
-        "sections.rich-text",
-        "sections.pricing",
-        "sections.lead-form"
+        "sections.tech-stack"
       ],
       "pluginOptions": {
         "i18n": {

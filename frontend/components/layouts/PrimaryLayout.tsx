@@ -1,19 +1,30 @@
+import { Container } from '@mantine/core';
 import Head from 'next/head';
+import HomeHeader from '../header/Header';
 
 export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {}
-
+const links = [
+  {
+    label: 'Build',
+    link: '/build',
+  },
+  {
+    label: 'CI/CD',
+    link: '/cicd',
+  },
+];
 const PrimaryLayout: React.FC<IPrimaryLayout> = ({ children, ...divProps }) => {
   return (
     <>
       <Head>
-        <title>App Name</title>
+        <title>Impact Case Study</title>
       </Head>
-      <div {...divProps}>
-        <div>Header</div>
-        <main className="px-5">{children}</main>
-        <div className="m-auto" />
-        <div>Footer</div>
-      </div>
+      <Container size="xl">
+        <div {...divProps}>
+          <HomeHeader />
+          <main>{children}</main>
+        </div>
+      </Container>
     </>
   );
 };
